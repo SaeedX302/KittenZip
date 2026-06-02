@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <Package
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
@@ -154,6 +154,7 @@
               <uap:FileType>.zipx</uap:FileType>
               <uap:FileType>.zst</uap:FileType>
               <uap:FileType>.zstd</uap:FileType>
+              <uap:FileType>.kittens</uap:FileType>
               <uap10:FileType>*</uap10:FileType>
             </uap:SupportedFileTypes>
           </uap3:FileTypeAssociation>

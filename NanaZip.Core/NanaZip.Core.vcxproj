@@ -99,6 +99,7 @@
     <ClCompile Include="SevenZip\CPP\7zip\Archive\AvbHandler.cpp" />
     <ClCompile Include="SevenZip\CPP\7zip\Archive\Base64Handler.cpp" />
     <ClCompile Include="SevenZip\CPP\7zip\Archive\Bz2Handler.cpp" />
+    <ClCompile Include="SevenZip\CPP\7zip\Archive\KittensHandler.cpp" />
     <ClCompile Include="SevenZip\CPP\7zip\Archive\Cab\CabBlockInStream.cpp" />
     <ClCompile Include="SevenZip\CPP\7zip\Archive\Cab\CabHandler.cpp" />
     <ClCompile Include="SevenZip\CPP\7zip\Archive\Cab\CabHeader.cpp" />
