@@ -1,0 +1,18 @@
+// **************** KittenZip Modification Start ****************
+//#include "../../MyVersionInfo.rc"
+// **************** KittenZip Modification End ****************
+
+// **************** KittenZip Modification Start ****************
+//MY_VERSION_INFO_APP("7z Console SFX", "7z.sfx")
+// **************** KittenZip Modification End ****************
+
+// **************** KittenZip Modification Start ****************
+//IDI_ICON ICON "7z.ico"
+101 ICON "../../../../../../Assets/KittenZipPreviewSfx.ico"
+// **************** KittenZip Modification End ****************
+
+// **************** KittenZip Modification Start ****************
+//#ifndef UNDER_CE
+//1  24  MOVEABLE PURE   "../../UI/Console/Console.manifest"
+//#endif
+// **************** KittenZip Modification End ****************

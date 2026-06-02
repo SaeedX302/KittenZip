@@ -1,7 +1,7 @@
-﻿/*
- * PROJECT:    NanaZip Platform Base Library (K7Base)
+/*
+ * PROJECT:    KittenZip Platform Base Library (K7Base)
  * FILE:       K7BaseHash.cpp
- * PURPOSE:    Implementation for NanaZip Platform Hash Algorithms Interfaces
+ * PURPOSE:    Implementation for KittenZip Platform Hash Algorithms Interfaces
  *
  * LICENSE:    The MIT License
  *

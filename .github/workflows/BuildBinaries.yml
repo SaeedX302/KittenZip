@@ -1,4 +1,4 @@
-﻿name: Build Binaries
+name: Build Binaries
 
 on:
   push:
@@ -27,26 +27,26 @@ jobs:
     - name: Upload MSIX Bundle
       uses: actions/upload-artifact@v7
       with:
-        name: NanaZip_Mainline_ApplicationPackages
+        name: KittenZip_Mainline_ApplicationPackages
         path: Output/Binaries/AppPackages
     - name: Upload Extension Package Installer
       uses: actions/upload-artifact@v7
       with:
-        name: NanaZip_Mainline_ExtensionPackageInstaller
-        path: Output/NanaZip.ExtensionPackage_*.exe
+        name: KittenZip_Mainline_ExtensionPackageInstaller
+        path: Output/KittenZip.ExtensionPackage_*.exe
     - name: Upload MSBuild Build Process Binary Log
       uses: actions/upload-artifact@v7
       if: '!cancelled()'
       with:
-        name: NanaZip_Mainline_BuildBinaryLog
+        name: KittenZip_Mainline_BuildBinaryLog
         path: Output/BuildAllTargets.binlog
     - name: Upload Portable Binaries
       uses: actions/upload-artifact@v7
       with:
-        name: NanaZip_Mainline_PortableBinaries
+        name: KittenZip_Mainline_PortableBinaries
         path: Output/Binaries/Root/Binaries
     - name: Upload Debug Symbols
       uses: actions/upload-artifact@v7
       with:
-        name: NanaZip_Mainline_DebugSymbols
+        name: KittenZip_Mainline_DebugSymbols
         path: Output/Binaries/Root/Symbols

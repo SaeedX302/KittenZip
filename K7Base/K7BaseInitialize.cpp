@@ -1,7 +1,7 @@
-﻿/*
- * PROJECT:    NanaZip Platform Base Library (K7Base)
+/*
+ * PROJECT:    KittenZip Platform Base Library (K7Base)
  * FILE:       K7BaseInitialize.cpp
- * PURPOSE:    Implementation for NanaZip Platform Base Initialize Interfaces
+ * PURPOSE:    Implementation for KittenZip Platform Base Initialize Interfaces
  *
  * LICENSE:    The MIT License
  *

@@ -1,0 +1,7 @@
+namespace KittenZip.Modern
+{
+    [default_interface]
+    runtimeclass CopyLocationPage : Windows.UI.Xaml.Controls.Page
+    {
+    }
+}

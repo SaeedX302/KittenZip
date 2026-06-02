@@ -1,7 +1,7 @@
-﻿/*
- * PROJECT:    NanaZip Platform Base Library (K7Base)
+/*
+ * PROJECT:    KittenZip Platform Base Library (K7Base)
  * FILE:       K7BaseDetours.cpp
- * PURPOSE:    Implementation for NanaZip Platform Detours Library Wrappers
+ * PURPOSE:    Implementation for KittenZip Platform Detours Library Wrappers
  *
  * LICENSE:    The MIT License
  *

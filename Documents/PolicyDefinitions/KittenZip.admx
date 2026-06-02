@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitions
+    xmlns="http://www.microsoft.com/GroupPolicy/PolicyDefinitions"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.microsoft.com/GroupPolicy/PolicyDefinitions PolicyDefinitionFiles.xsd"
+    revision="1.0"
+    schemaVersion="1.0">
+    <policyNamespaces>
+        <target prefix="KittenZip" namespace="KittenZip.Policies" />
+    </policyNamespaces>
+    <resources minRequiredRevision="1.0" />
+
+    <supportedOn>
+        <products>
+            <product name="KittenZip" displayName="$(string.KittenZip)">
+                <!-- major (2 digits) + minor (2 digits) + build (5 digits) -->
+                <majorVersion
+                    name="KittenZip60P1"
+                    displayName="$(string.KittenZip60P1)"
+                    versionIndex="60001461" />
+                <majorVersion
+                    name="KittenZip60P2"
+                    displayName="$(string.KittenZip60P2)"
+                    versionIndex="60001621" />
+            </product>
+        </products>
+        <definitions>
+            <definition
+                name="SUPPORTED_KittenZip60P1Only"
+                displayName="$(string.SUPPORTED_KittenZip60P1Only)">
+                <and>
+                    <range ref="KittenZip60P1" />
+                </and>
+            </definition>
+            <definition
+                name="SUPPORTED_KittenZip60P2"
+                displayName="$(string.SUPPORTED_KittenZip60P2)">
+                <and>
+                    <range ref="KittenZip" minVersionIndex="60001621" />
+                </and>
+            </definition>
+        </definitions>
+    </supportedOn>
+
+    <categories>
+        <category name="KittenZipPolicies" displayName="$(string.KittenZipPolicies)" />
+        <category name="HandlerCodecRestrictions" displayName="$(string.HandlerCodecRestrictions)">
+            <parentCategory ref="KittenZipPolicies" />
+        </category>
+        <category name="KittenZipPoliciesLegacy" displayName="$(string.KittenZipPoliciesLegacy)">
+            <parentCategory ref="KittenZipPolicies" />
+        </category>
+    </categories>
+
+    <policies>
+        <policy
+            name="AllowDynamicCodeGeneration"
+            class="Machine"
+            displayName="$(string.AllowDynamicCodeGeneration)"
+            explainText="$(string.AllowDynamicCodeGenerationExplain)"
+            key="SOFTWARE\Policies\M2Team\KittenZip"
+            valueName="AllowDynamicCodeGeneration">
+            <parentCategory ref="KittenZipPolicies" />
+            <supportedOn ref="SUPPORTED_KittenZip60P2" />
+            <enabledValue>
+                <decimal value="1" />
+            </enabledValue>
+            <disabledValue>
+                <decimal value="0" />
+            </disabledValue>
+        </policy>
+        <policy
+            name="AllowChildProcessCreation"
+            class="Machine"
+            displayName="$(string.AllowChildProcessCreation)"
+            explainText="$(string.AllowChildProcessCreationExplain)"
+            key="SOFTWARE\Policies\M2Team\KittenZip"
+            valueName="AllowChildProcessCreation">
+            <parentCategory ref="KittenZipPolicies" />
+            <supportedOn ref="SUPPORTED_KittenZip60P2" />
+            <enabledValue>
+                <decimal value="1" />
+            </enabledValue>
+            <disabledValue>
+                <decimal value="0" />
+            </disabledValue>
+        </policy>
+        <policy
+            name="WriteZoneIdExtract"
+            class="Machine"
+            displayName="$(string.WriteZoneIdExtract)"
+            explainText="$(string.WriteZoneIdExtractExplain)"
+            presentation="$(presentation.WriteZoneIdExtract)"
+            key="SOFTWARE\Policies\M2Team\KittenZip">
+            <parentCategory ref="KittenZipPolicies" />
+            <supportedOn ref="SUPPORTED_KittenZip60P2" />
+            <elements>
+                <enum id="WriteZoneIdExtract" valueName="WriteZoneIdExtract">
+                    <item displayName="$(string.WriteZoneIdExtract0)">
+                        <value>
+                            <decimal value="0" />
+                        </value>
+                    </item>
+                    <item displayName="$(string.WriteZoneIdExtract1)">
+                        <value>
+                            <decimal value="1" />
+                        </value>
+                    </item>
+                    <item displayName="$(string.WriteZoneIdExtract2)">
+                        <value>
+                            <decimal value="2" />
+                        </value>
+                    </item>
+                </enum>
+            </elements>
+        </policy>
+
+        <!-- Handler and codec restrictions -->
+        <policy
+            name="AllowedHandlers"
+            class="Machine"
+            displayName="$(string.AllowedHandlers)"
+            explainText="$(string.AllowedHandlersExplain)"
+            presentation="$(presentation.AllowedHandlers)"
+            key="SOFTWARE\Policies\M2Team\KittenZip">
+            <parentCategory ref="HandlerCodecRestrictions" />
+            <supportedOn ref="SUPPORTED_KittenZip60P2" />
+            <elements>
+                <multiText id="AllowedHandlers" valueName="AllowedHandlers" />
+            </elements>
+        </policy>
+        <policy
+            name="BlockedHandlers"
+            class="Machine"
+            displayName="$(string.BlockedHandlers)"
+            explainText="$(string.BlockedHandlersExplain)"
+            presentation="$(presentation.BlockedHandlers)"
+            key="SOFTWARE\Policies\M2Team\KittenZip">
+            <parentCategory ref="HandlerCodecRestrictions" />
+            <supportedOn ref="SUPPORTED_KittenZip60P2" />
+            <elements>
+                <multiText id="BlockedHandlers" valueName="BlockedHandlers" />
+            </elements>
+        </policy>
+        <policy
+            name="AllowedCodecs"
+            class="Machine"
+            displayName="$(string.AllowedCodecs)"
+            explainText="$(string.AllowedCodecsExplain)"
+            presentation="$(presentation.AllowedCodecs)"
+            key="SOFTWARE\Policies\M2Team\KittenZip">
+            <parentCategory ref="HandlerCodecRestrictions" />
+            <supportedOn ref="SUPPORTED_KittenZip60P2" />
+            <elements>
+                <multiText id="AllowedCodecs" valueName="AllowedCodecs" />
+            </elements>
+        </policy>
+        <policy
+            name="BlockedCodecs"
+            class="Machine"
+            displayName="$(string.BlockedCodecs)"
+            explainText="$(string.BlockedCodecsExplain)"
+            presentation="$(presentation.BlockedCodecs)"
+            key="SOFTWARE\Policies\M2Team\KittenZip">
+            <parentCategory ref="HandlerCodecRestrictions" />
+            <supportedOn ref="SUPPORTED_KittenZip60P2" />
+            <elements>
+                <multiText id="BlockedCodecs" valueName="BlockedCodecs" />
+            </elements>
+        </policy>
+
+        <!-- Legacy policies -->
+        <policy
+            name="WriteZoneIdExtractLegacy"
+            class="Machine"
+            displayName="$(string.WriteZoneIdExtract)"
+            explainText="$(string.WriteZoneIdExtractExplain)"
+            presentation="$(presentation.WriteZoneIdExtract)"
+            key="SOFTWARE\KittenZip\Policies">
+            <parentCategory ref="KittenZipPoliciesLegacy" />
+            <supportedOn ref="SUPPORTED_KittenZip60P1Only" />
+            <elements>
+                <enum id="WriteZoneIdExtract" valueName="WriteZoneIdExtract">
+                    <item displayName="$(string.WriteZoneIdExtract0)">
+                        <value>
+                            <decimal value="0" />
+                        </value>
+                    </item>
+                    <item displayName="$(string.WriteZoneIdExtract1)">
+                        <value>
+                            <decimal value="1" />
+                        </value>
+                    </item>
+                    <item displayName="$(string.WriteZoneIdExtract2)">
+                        <value>
+                            <decimal value="2" />
+                        </value>
+                    </item>
+                </enum>
+            </elements>
+        </policy>
+        <policy
+            name="DisableMitigations"
+            class="Machine"
+            displayName="$(string.DisableMitigations)"
+            explainText="$(string.DisableMitigationsExplain)"
+            key="SOFTWARE\KittenZip\Policies"
+            valueName="DisableMitigations">
+            <parentCategory ref="KittenZipPoliciesLegacy" />
+            <supportedOn ref="SUPPORTED_KittenZip60P1Only" />
+            <enabledValue>
+                <decimal value="1" />
+            </enabledValue>
+            <disabledValue>
+                <decimal value="0" />
+            </disabledValue>
+        </policy>
+    </policies>
+</policyDefinitions>

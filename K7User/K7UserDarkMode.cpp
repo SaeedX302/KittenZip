@@ -1,7 +1,7 @@
-﻿/*
- * PROJECT:    NanaZip Platform User Library (K7User)
+/*
+ * PROJECT:    KittenZip Platform User Library (K7User)
  * FILE:       K7UserDarkMode.cpp
- * PURPOSE:    Implementation for NanaZip Platform User Dark Mode Support
+ * PURPOSE:    Implementation for KittenZip Platform User Dark Mode Support
  *
  * LICENSE:    The MIT License
  *
@@ -38,7 +38,7 @@ EXTERN_C HRESULT WINAPI GetThemeClass(
 #include <CommCtrl.h>
 #pragma comment(lib,"comctl32.lib")
 
-// TODO: Move some workaround for NanaZip.UI.* to this.
+// TODO: Move some workaround for KittenZip.UI.* to this.
 
 namespace
 {
@@ -309,13 +309,13 @@ namespace
     static bool IsFileManagerWindowClassName(
         _In_ LPCWSTR ClassName)
     {
-        return (0 == std::wcscmp(ClassName, L"NanaZip.Modern.FileManager"));
+        return (0 == std::wcscmp(ClassName, L"KittenZip.Modern.FileManager"));
     }
 
     static bool IsFileManagerPanelWindowClassName(
         _In_ LPCWSTR ClassName)
     {
-        return (0 == std::wcscmp(ClassName, L"NanaZip::Panel"));
+        return (0 == std::wcscmp(ClassName, L"KittenZip::Panel"));
     }
 
     static bool IsFileManagerWindow(

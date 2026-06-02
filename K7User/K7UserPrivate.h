@@ -1,7 +1,7 @@
-﻿/*
- * PROJECT:    NanaZip Platform User Library (K7User)
+/*
+ * PROJECT:    KittenZip Platform User Library (K7User)
  * FILE:       K7UserPrivate.h
- * PURPOSE:    Definition for NanaZip Platform User Private Interfaces
+ * PURPOSE:    Definition for KittenZip Platform User Private Interfaces
  *
  * LICENSE:    The MIT License
  *

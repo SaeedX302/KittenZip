@@ -1,7 +1,7 @@
-﻿/*
- * PROJECT:    NanaZip Platform User Library (K7User)
+/*
+ * PROJECT:    KittenZip Platform User Library (K7User)
  * FILE:       K7UserRedirector.cpp
- * PURPOSE:    Implementation for NanaZip Platform User API Redirector
+ * PURPOSE:    Implementation for KittenZip Platform User API Redirector
  *
  * LICENSE:    The MIT License
  *
@@ -12,8 +12,8 @@
 
 // Here are the linker-time redirections to replace the original APIs.
 // Implementations only for x64 and ARM64, if you want to learn how to achieve
-// that in x86, please refer to NanaZip.Shared.ModernExperienceShims project in
-// the historical NanaZip versions source code.
+// that in x86, please refer to KittenZip.Shared.ModernExperienceShims project in
+// the historical KittenZip versions source code.
 
 #ifndef K7_REDIRECT
 #define K7_REDIRECT(Source, Target) \

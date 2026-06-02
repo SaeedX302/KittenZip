@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  PROJECT:    KittenZip
+  FILE:       KittenZip.Project.Version.props
+  PURPOSE:    MSBuild Properties for project version configurations for KittenZip
+
+  LICENSE:    The MIT License
+
+  MAINTAINER: MouriNaruto (Kenji.Mouri@outlook.com)
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <KittenZipMajorVersion>6</KittenZipMajorVersion>
+    <KittenZipMinorVersion>5</KittenZipMinorVersion>
+    <KittenZipBuildNumberDate>2026-02-24</KittenZipBuildNumberDate>
+    <KittenZipVersionTag>Preview</KittenZipVersionTag>
+  </PropertyGroup>
+</Project>

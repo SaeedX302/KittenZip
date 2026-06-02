@@ -1,7 +1,7 @@
-﻿/*
- * PROJECT:    NanaZip Platform Base Library (K7Base)
+/*
+ * PROJECT:    KittenZip Platform Base Library (K7Base)
  * FILE:       K7BasePolicies.cpp
- * PURPOSE:    Implementation for NanaZip Platform Base Policies Interfaces
+ * PURPOSE:    Implementation for KittenZip Platform Base Policies Interfaces
  *
  * LICENSE:    The MIT License
  *
@@ -124,12 +124,12 @@ EXTERN_C MO_RESULT MOAPI K7BaseInitializePolicies()
     HKEY PoliciesKeyHandle = nullptr;
     if (ERROR_SUCCESS != ::RegOpenKeyExW(
         HKEY_LOCAL_MACHINE,
-        L"Software\\Policies\\M2Team\\NanaZip",
+        L"Software\\Policies\\M2Team\\KittenZip",
         0,
         KEY_READ | KEY_WOW64_64KEY,
         &PoliciesKeyHandle))
     {
-        // NanaZip should use the default policy settings if the relevant
+        // KittenZip should use the default policy settings if the relevant
         // policies registry key cannot be opened successfully.
         return MO_RESULT_SUCCESS_OK;
     }
@@ -143,7 +143,7 @@ EXTERN_C MO_RESULT MOAPI K7BaseInitializePolicies()
         {
             if (1 == Value)
             {
-                // Only when the registry value is 1, NanaZip will allow dynamic
+                // Only when the registry value is 1, KittenZip will allow dynamic
                 // code generation.
                 g_AllowDynamicCodeGeneration = MO_TRUE;
             }
@@ -159,7 +159,7 @@ EXTERN_C MO_RESULT MOAPI K7BaseInitializePolicies()
         {
             if (1 == Value)
             {
-                // Only when the registry value is 1, NanaZip will allow child
+                // Only when the registry value is 1, KittenZip will allow child
                 // process creation.
                 g_AllowChildProcessCreation = MO_TRUE;
             }

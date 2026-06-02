@@ -1,6 +1,6 @@
-# NanaZip Website
+# KittenZip Website
 
-This folder contains the source code of the NanaZip website,
+This folder contains the source code of the KittenZip website,
 built using [Astro](https://astro.build).
 
 ## Images

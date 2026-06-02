@@ -1,7 +1,7 @@
-﻿/*
- * PROJECT:    NanaZip Platform Base Library (K7Base)
+/*
+ * PROJECT:    KittenZip Platform Base Library (K7Base)
  * FILE:       K7Base.h
- * PURPOSE:    Definition for NanaZip Platform Base Public Interfaces
+ * PURPOSE:    Definition for KittenZip Platform Base Public Interfaces
  *
  * LICENSE:    The MIT License
  *

@@ -1,7 +1,7 @@
-﻿/*
- * PROJECT:    NanaZip Platform Base Library (K7Base)
+/*
+ * PROJECT:    KittenZip Platform Base Library (K7Base)
  * FILE:       K7BasePrivate.h
- * PURPOSE:    Definition for NanaZip Platform Base Private Interfaces
+ * PURPOSE:    Definition for KittenZip Platform Base Private Interfaces
  *
  * LICENSE:    The MIT License
  *
@@ -17,7 +17,7 @@
 #define K7_BASE_POLICIES_PRIVATE
 
 /**
- * @brief Initializes the NanaZip policy settings.
+ * @brief Initializes the KittenZip policy settings.
  * @return If the function succeeds, it returns MO_RESULT_SUCCESS_OK. Otherwise,
  *         it returns an MO_RESULT error code.
  * @remarks The function should be called only once during the K7Base library

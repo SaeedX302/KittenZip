@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
-  PROJECT:    NanaZip Platform Base Library (K7Base)
+  PROJECT:    KittenZip Platform Base Library (K7Base)
   FILE:       K7BaseStatic.props
   PURPOSE:    MSBuild Properties for referencing the K7Base static library
 

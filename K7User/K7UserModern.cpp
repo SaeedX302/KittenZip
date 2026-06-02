@@ -1,7 +1,7 @@
-﻿/*
- * PROJECT:    NanaZip Platform User Library (K7User)
+/*
+ * PROJECT:    KittenZip Platform User Library (K7User)
  * FILE:       K7UserModern.cpp
- * PURPOSE:    Implementation for NanaZip Platform User Modern Experiences
+ * PURPOSE:    Implementation for KittenZip Platform User Modern Experiences
  *
  * LICENSE:    The MIT License
  *

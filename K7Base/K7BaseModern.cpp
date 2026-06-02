@@ -1,7 +1,7 @@
-﻿/*
- * PROJECT:    NanaZip Platform Base Library (K7Base)
+/*
+ * PROJECT:    KittenZip Platform Base Library (K7Base)
  * FILE:       K7BaseModern.cpp
- * PURPOSE:    Implementation for NanaZip Platform Base Modern Experiences
+ * PURPOSE:    Implementation for KittenZip Platform Base Modern Experiences
  *
  * LICENSE:    The MIT License
  *

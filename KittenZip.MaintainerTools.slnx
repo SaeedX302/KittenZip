@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="KittenZip.Build.Tasks/KittenZip.Build.Tasks.csproj" />
+  <Project Path="KittenZip.MigrateLegacyStringResources/KittenZip.MigrateLegacyStringResources.csproj" />
+  <Project Path="KittenZip.ProjectAssetsGenerator/KittenZip.ProjectAssetsGenerator.csproj" />
+  <Project Path="KittenZip.RefreshPackageVersion/KittenZip.RefreshPackageVersion.csproj" />
+</Solution>

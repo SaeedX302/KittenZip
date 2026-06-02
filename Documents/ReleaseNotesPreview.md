@@ -1,29 +1,29 @@
-﻿# NanaZip Preview Release Notes
+# KittenZip Preview Release Notes
 
-For stable versions, please read [NanaZip Release Notes](ReleaseNotes.md).
+For stable versions, please read [KittenZip Release Notes](ReleaseNotes.md).
 
-**NanaZip 6.5 Preview (6.5.16xx.0)**
+**KittenZip 6.5 Preview (6.5.16xx.0)**
 
-- Includes all the improvements from NanaZip 6.0 Update 7 (6.0.1711.0).
+- Includes all the improvements from KittenZip 6.0 Update 7 (6.0.1711.0).
 - Introduce XAML XAML copy location dialog. (Contributed by dongle-the-gadget.)
 - Don't open Explorer by default during extract-on-open. (Contributed by
   dinhngtu.)
 
-**NanaZip 6.5 Preview (6.5.1638.0)**
+**KittenZip 6.5 Preview (6.5.1638.0)**
 
-This release includes all the improvements from NanaZip 6.0 Update 1
+This release includes all the improvements from KittenZip 6.0 Update 1
 (6.0.1638.0).
 
-**NanaZip 6.0 Final (6.0.1630.0)**
+**KittenZip 6.0 Final (6.0.1630.0)**
 
-- Start to provide the official portable binaries package of NanaZip with both
-  Modern and Classic flavors, except the NanaZip File Manager.
+- Start to provide the official portable binaries package of KittenZip with both
+  Modern and Classic flavors, except the KittenZip File Manager.
 - Fix several crash issues for the .NET Single File Application bundle readonly
   support. (Thanks to haaeein.)
 - Fix several hang issues for the ROMFS file system image readonly support
   support. (Contributed by dinhngtu. Thanks to haaeein.)
 - Fix several issues for context menu support. (Contributed by dinhngtu.)
-- Synchronize 7-Zip mainline implementations to 26.00. (Except the NanaZip File
+- Synchronize 7-Zip mainline implementations to 26.00. (Except the KittenZip File
   Manager.) (Thanks to Igor Pavlov. Noticed by FadeMind.)
 - Improve the address bar UI layout. (Cooperated with dinhngtu. Suggested by
   VinaC2.)
@@ -33,13 +33,13 @@ This release includes all the improvements from NanaZip 6.0 Update 1
 - Add the dark mode support for Win32 task dialog.
 - Use Win32 TaskDialog to implement the Folders History dialog to simplify the
   implementation.
-- Introduce Group Policy Administrative Template (ADMX/ADML) for NanaZip.
+- Introduce Group Policy Administrative Template (ADMX/ADML) for KittenZip.
   (Contributed by dinhngtu.)
 - Update Dutch translation. (Contributed by Stephan-P.)
-- Synchronize the NanaZip File Manager implementations between NanaZip (Modern)
-  and NanaZip Classic.
+- Synchronize the KittenZip File Manager implementations between KittenZip (Modern)
+  and KittenZip Classic.
 - Fix some potential issues for the dark mode support.
-- Try to partially improve the NanaZip File Manager main window keyboard
+- Try to partially improve the KittenZip File Manager main window keyboard
   navigation experience.
 - Update Mile.Project.Configurations to 1.0.1917, which solve some issues for
   using NuGet Package References Support in Visual Studio 2026 version 18.3 or
@@ -47,38 +47,38 @@ This release includes all the improvements from NanaZip 6.0 Update 1
 - Update Mile.Windows.Internal to 1.0.3515.
 - Update Mile.Xaml to 2.5.1616.
 - Add RestoreNuGetPackages.cmd script to workaround some issues for people who
-  want to use Visual Studio to build NanaZip without running BuildAllTargets.bat
+  want to use Visual Studio to build KittenZip without running BuildAllTargets.bat
   script.
  
-**NanaZip 6.0 Preview 2 (6.0.1621.0)**
+**KittenZip 6.0 Preview 2 (6.0.1621.0)**
 
-- Introduce NanaZip.Universal.Windows project for making NanaZip Command Line
-  Interface (Windows) for both NanaZip (Modern) and NanaZip Classic a.k.a.
-  NanaZipG or K7G to synchronize to the latest 7-Zip mainline and 7-Zip ZS
+- Introduce KittenZip.Universal.Windows project for making KittenZip Command Line
+  Interface (Windows) for both KittenZip (Modern) and KittenZip Classic a.k.a.
+  KittenZipG or K7G to synchronize to the latest 7-Zip mainline and 7-Zip ZS
   implementations.
-- Introduce NanaZip Platform Base Library (K7Base) and NanaZip Platform User
-  Library (K7User) to replace NanaZip Platform Abstraction Layer (K7Pal) and
-  NanaZip.Frieren for better code sharing and maintainability.
+- Introduce KittenZip Platform Base Library (K7Base) and KittenZip Platform User
+  Library (K7User) to replace KittenZip Platform Abstraction Layer (K7Pal) and
+  KittenZip.Frieren for better code sharing and maintainability.
 - Redesign the security mitigation policies settings support (followed some
   suggestions from dongle-the-gadget), also introduces several new security
   mitigation policies like the archive handler and codec handler restriction
   (which is contributed by dinhngtu). Read
-  https://github.com/M2Team/NanaZip/blob/main/Documents/Policies.md for more
+  https://github.com/M2Team/KittenZip/blob/main/Documents/Policies.md for more
   information.
-- Backport CVE-2025-0411 and CVE-2025-11001 for the NanaZip File Manager which
+- Backport CVE-2025-0411 and CVE-2025-11001 for the KittenZip File Manager which
   still use the old 7-Zip mainline codebase. (Contributed by dinhngtu.)
 - Set the LOAD_LIBRARY_SEARCH_SYSTEM32 dependent load flag on Release builds of
   Self Extracting Executables stubs to mitigate static imports level DLL
   planting attack on Windows 10 build 14393 and later. (Contributed by
   dinhngtu.)
-- Allow to associate more file types to NanaZip. (Contributed by manfromarce.)
+- Allow to associate more file types to KittenZip. (Contributed by manfromarce.)
 - Enable Ctrl+Backspace on edit fields using SHAutoComplete. (Contributed by
   dinhngtu.)
 - Fix the flickering issues when selecting list view in dark mode.
 - Make texts have better contrast in dark mode.
 - Make FastLZMA2 and Lizard reuse partial Zstandard implementations.
-- Fix crash issue when using NanaZip.Core.Setup.sfx.
-  (https://github.com/M2Team/NanaZip/issues/795) (Thanks to kbarnes3.)
+- Fix crash issue when using KittenZip.Core.Setup.sfx.
+  (https://github.com/M2Team/KittenZip/issues/795) (Thanks to kbarnes3.)
 - Fix flickering XAML dialogs. (Contributed by dongle-the-gadget.)
 - Fix crash issue from XAML address bar. (Contributed by dongle-the-gadget.)
 - Use a low name as the shell extension name prefix to work around our context
@@ -91,15 +91,15 @@ This release includes all the improvements from NanaZip 6.0 Update 1
 - Fix UI assignment of WriteZone setting. (Contributed by dinhngtu.)
 - Handle Add button when inside archives. (Contributed by dinhngtu.)
 - Use assembly hardware acceleration for BLAKE3 implementation.
-- Fix issues for NanaZip Preview SVG icon assets for Contrast Black mode.
+- Fix issues for KittenZip Preview SVG icon assets for Contrast Black mode.
 - Update the icon assets with optimized assets to reduce the binary size.
 - Don't contain Mile.Project.Wap.Unstaged.targets in the MSIX package.
-- Synchronize 7-Zip mainline implementations to 25.01 for NanaZip components
+- Synchronize 7-Zip mainline implementations to 25.01 for KittenZip components
   which still use the old 7-Zip mainline codebase (command line version).
   (Thanks to Igor Pavlov.)
 - Synchronize the 7-Zip ZS implementations to
   https://github.com/mcmilk/7-Zip-zstd/tree/5766dd7745f6517f7ea42f6de9a190dfd92aa25f.
-  (Except the NanaZip File Manager.) (Thanks to Sergey G. Brester and Tino
+  (Except the KittenZip File Manager.) (Thanks to Sergey G. Brester and Tino
   Reichardt.)
 - Synchronize Brotli implementations to v1.2.0.
   (https://github.com/google/brotli/releases/tag/v1.2.0)
@@ -117,16 +117,16 @@ This release includes all the improvements from NanaZip 6.0 Update 1
 - Update Mile.Windows.Helpers to 1.0.1171.
 - Update Mile.Detours to 1.0.2180.
 - Update .NET projects to .NET 10 and update NuGet package dependencies.
-- Add Release Tags to NanaZip Versioning.
+- Add Release Tags to KittenZip Versioning.
 - Migrate solution from sln to slnx, and start to build with MSVC 14.50 toolset.
-- Support opening NanaZip Visual Studio solution without installing WinUI
+- Support opening KittenZip Visual Studio solution without installing WinUI
   application and/or Universal Windows Platform development workload.
   (Contributed by AndromedaMelody.)
 - Make the precompiled build tools generated by GitHub Actions workflow
   automatically.
 - Improve several implementations and fix several issues.
 
-**NanaZip 6.0 Preview 1 (6.0.1461.0)**
+**KittenZip 6.0 Preview 1 (6.0.1461.0)**
 
 - Start to transition to community driven development model.
 - Introduce extract-on-open feature. (Contributed by dinhngtu.)
@@ -149,7 +149,7 @@ This release includes all the improvements from NanaZip 6.0 Update 1
   archives. (Contributed by MajThomas.)
 - Introduce the environment variable parsing support for address bar. (Thanks to
   dongle-the-gadget's huge help.)
-- Improve the NanaZip startup performance by initializing the StoreContext
+- Improve the KittenZip startup performance by initializing the StoreContext
   later. (Contributed by dongle-the-gadget.)
 - Add support for CBR and CBZ file associations. (Contributed by dinhngtu.)
 - Add support for ASAR file association. (Contributed by dongle-the-gadget.)
@@ -174,10 +174,10 @@ This release includes all the improvements from NanaZip 6.0 Update 1
   should be helpful for debugging and resolving compatibility issues.
   (Contributed by dinhngtu.)
 - Fix dead loop issue when compressing files with Brotli, Lizard, LZ4 and LZ5
-  mentioned in https://github.com/M2Team/NanaZip/issues/639. (Thanks to
+  mentioned in https://github.com/M2Team/KittenZip/issues/639. (Thanks to
   gigano01, InfiniteLoopGameDev and iOrange.)
 - Fix the unable to return the processed bytes count issue for
-  NanaZipCodecsReadInputStream.
+  KittenZipCodecsReadInputStream.
 - Fix some string resources issues. (Contributed by dinhngtu.)
 - Fix issues in compression levels combobox. (Contributed by dongle-the-gadget.)
 - Update Albanian translation. (Contributed by F1219R.)
@@ -199,18 +199,18 @@ This release includes all the improvements from NanaZip 6.0 Update 1
 - Update Mile.Windows.Helpers to 1.0.952.
 - Update Mile.Windows.Internal to 1.0.3259.
 - Update Mile.Json to 1.0.1057.
-- Add littlefs v2.10.2 to NanaZip.Codecs for future development of work in
+- Add littlefs v2.10.2 to KittenZip.Codecs for future development of work in
   progress littlefs archive format readonly support.
-- Create NanaZip.Modern project for the modern user experience development.
-- Introduce Mile.Mobility dependence to NanaZip.Codecs project for making better
-  portability between NanaZip and AptxZip (a.k.a. NanaZip for POSIX).
-- Introduce NanaZip.ExtensionPackage project for future development of features
+- Create KittenZip.Modern project for the modern user experience development.
+- Introduce Mile.Mobility dependence to KittenZip.Codecs project for making better
+  portability between KittenZip and AptxZip (a.k.a. KittenZip for POSIX).
+- Introduce KittenZip.ExtensionPackage project for future development of features
   which need to be distributed as legacy installer. (Contributed by dinhngtu.)
 - Introduce Mile.Helpers.Portable.Base.Unstaged as the temporary infrastructure
-  to standardize some portable things in NanaZip.Codecs.
-- Introduce NanaZip.Codecs.Specification.Fat for adding definitions of FAT12,
+  to standardize some portable things in KittenZip.Codecs.
+- Introduce KittenZip.Codecs.Specification.Fat for adding definitions of FAT12,
   FAT16 and FAT32.
-- Introduce NanaZip.Codecs.Specification.Zealfs for adding definitions of
+- Introduce KittenZip.Codecs.Specification.Zealfs for adding definitions of
   ZealFS series file system. (Cooperated with Zeal 8-bit.)
 - Add littlefs v1 on-disk definitions to the littlefs file system image readonly
   support.
@@ -223,55 +223,55 @@ This release includes all the improvements from NanaZip 6.0 Update 1
   by dongle-the-gadget.)
 - Introduce legacy string migrator. (Contributed by dongle-the-gadget.)
 - Add more targeted editorconfig rules. (Contributed by dongle-the-gadget.)
-- Move NanaZip.Core's NanaZip.Core.Console project to NanaZip.Universal's
-  NanaZip.Universal.Console project.
+- Move KittenZip.Core's KittenZip.Core.Console project to KittenZip.Universal's
+  KittenZip.Universal.Console project.
 - Disable WinRT metadata generation for all WinRT component consumers.
-- Move NanaZip.Modern as the first item to workaround the AppX toolchain
+- Move KittenZip.Modern as the first item to workaround the AppX toolchain
   manifest generation issues.
 - Improve the GitHub Actions artifacts generation.
-- Update to Windows 11 SDK Build 26100 for NanaZipPackage.
+- Update to Windows 11 SDK Build 26100 for KittenZipPackage.
 - Fix the source code file header comment format.
 - Use C++ zero initialization to reduce potential issues.
 - Introduce reproducible build support for the whole project.
 
-**NanaZip 5.1 Preview 0 (5.1.1263.0)**
+**KittenZip 5.1 Preview 0 (5.1.1263.0)**
 
-This release includes all the improvements from NanaZip 5.0 Update 2
+This release includes all the improvements from KittenZip 5.0 Update 2
 (5.0.1263.0).
 
-**NanaZip 5.1 Preview 0 (5.1.1252.0)**
+**KittenZip 5.1 Preview 0 (5.1.1252.0)**
 
-This release includes all the improvements from NanaZip 5.0 Update 1
+This release includes all the improvements from KittenZip 5.0 Update 1
 (5.0.1252.0).
 
-**NanaZip 5.0 Preview 2 (5.0.1243.0)**
+**KittenZip 5.0 Preview 2 (5.0.1243.0)**
 
-- Continue to improve the work-in-progress NanaZip Platform Abstraction Layer
-  (K7Pal). (https://github.com/M2Team/NanaZip/tree/main/K7Pal)
+- Continue to improve the work-in-progress KittenZip Platform Abstraction Layer
+  (K7Pal). (https://github.com/M2Team/KittenZip/tree/main/K7Pal)
   - Fix the crash and encrypted RAR5 format extraction wrong password issue for
     7-Zip's hash algorithms wrappers which mentioned in
-    https://github.com/M2Team/NanaZip/issues/542. (Thanks to RuesanG.)
+    https://github.com/M2Team/KittenZip/issues/542. (Thanks to RuesanG.)
   - Introduce K7PalHashDuplicate API.
   - Remove K7PalHashReset API for improving the security.
   - Reduce the saved information in hash contexts to improve the security.
-  - Use NanaZip Platform Abstraction Layer (K7Pal) to implement 7-Zip's SHA-1
+  - Use KittenZip Platform Abstraction Layer (K7Pal) to implement 7-Zip's SHA-1
     hash algorithms.
 - Update zh-Hans and zh-Hant translations for 'Want * History' strings. 
-  (Contributed by R-YaTian.) (Forget to mentioned in NanaZip 5.0 Preview 1.)
+  (Contributed by R-YaTian.) (Forget to mentioned in KittenZip 5.0 Preview 1.)
 - Adds a setting for opening the folder after extracting from archive.
   (Contributing by DaxDupont.)
 - Introduce the Smart Extraction. (Contributed by R-YaTian.)
-- Fix the issue that which NanaZip windows and dialogs will be opened in the
-  background when using NanaZip from context menu. (Contributed by R-YaTian.)
+- Fix the issue that which KittenZip windows and dialogs will be opened in the
+  background when using KittenZip from context menu. (Contributed by R-YaTian.)
 - Update xxHash to v0.8.3.
   (https://github.com/Cyan4973/xxHash/releases/tag/v0.8.3)
 
-**NanaZip 5.0 Preview 1 (5.0.1215.0)**
+**KittenZip 5.0 Preview 1 (5.0.1215.0)**
 
-- Introduce NanaZip Platform Abstraction Layer (K7Pal) for wrapping the platform
-  specific infrastructures. (https://github.com/M2Team/NanaZip/tree/main/K7Pal)
+- Introduce KittenZip Platform Abstraction Layer (K7Pal) for wrapping the platform
+  specific infrastructures. (https://github.com/M2Team/KittenZip/tree/main/K7Pal)
   (Work In Progress)
-  - Provide hash functions interfaces implemented with Windows CNG API. NanaZip
+  - Provide hash functions interfaces implemented with Windows CNG API. KittenZip
     uses these hash functions from K7Pal:
     - MD2
     - MD4
@@ -280,59 +280,59 @@ This release includes all the improvements from NanaZip 5.0 Update 1
     - SHA-256
     - SHA-384
     - SHA-512
-    - ED2K (Implemented as the K7Pal MD4 wrapper in NanaZip.Codecs.)
+    - ED2K (Implemented as the K7Pal MD4 wrapper in KittenZip.Codecs.)
 - Synchronize the 7-Zip mainline implementations to 24.09.
   (https://github.com/ip7z/7zip/releases/tag/24.09) (Thanks to Igor Pavlov.
   Noticed by FadeMind and peashooter2.)
-- Finally move NanaZip console version to NanaZip.Core project.
+- Finally move KittenZip console version to KittenZip.Core project.
 - Don't fail ModernSHBrowseForFolderW when DefaultFolder cannot be set.
   (Contributed by dinhngtu.)
 - Update Mile.Windows.UniCrt to 1.1.278.
 
-**NanaZip 5.0 Preview 0 (5.0.1188.0)**
+**KittenZip 5.0 Preview 0 (5.0.1188.0)**
 
-- This release includes all the improvements from NanaZip 3.1 (3.1.1080.0)
-  (https://github.com/M2Team/NanaZip/releases/tag/3.1.1080.0).
+- This release includes all the improvements from KittenZip 3.1 (3.1.1080.0)
+  (https://github.com/M2Team/KittenZip/releases/tag/3.1.1080.0).
 - Update Brazilian Portuguese translation. (Contributed by maisondasilva.)
-- Make sure NanaZip Core (except the Self Extracting Executables) and NanaZip
+- Make sure KittenZip Core (except the Self Extracting Executables) and KittenZip
   Classic using ucrtbase.dll with 10.0.19041.0 version or later.
 - Update Mile.Windows.Helpers to 1.0.671.
     (https://github.com/ProjectMile/Mile.Windows.Helpers/tree/1.0.671.0)
-- Move NanaZip console version to NanaZip.Core project. (Not used in NanaZip
+- Move KittenZip console version to KittenZip.Core project. (Not used in KittenZip
   MSIX package because we need to release the next preview to contain the
-  CVE-2024-11477 fix in NanaZip 3.1.)
-- Remove C++/WinRT dependency for NanaZip.Codecs and NanaZip.Frieren.
-- Add GetDpiForWindowWrapper for NanaZip.Frieren.DarkMode to fix the legacy
+  CVE-2024-11477 fix in KittenZip 3.1.)
+- Remove C++/WinRT dependency for KittenZip.Codecs and KittenZip.Frieren.
+- Add GetDpiForWindowWrapper for KittenZip.Frieren.DarkMode to fix the legacy
   Windows compatibility issues.
 - Remove VC-LTL dependency for the Self Extracting Executables related projects.
 - Adjust the compilation configurations to optimize the binary size for the Self
   Extracting Executables.
 - Use Mile.Windows.UniCrt (https://github.com/ProjectMile/Mile.Windows.UniCrt)
   instead of VC-LTL.
-- Update NanaZip.Specification.SevenZip header file.
-- Start to simplify the NanaZip specific decoders and encoders implementation.
+- Update KittenZip.Specification.SevenZip header file.
+- Start to simplify the KittenZip specific decoders and encoders implementation.
 - Synchronize the BLAKE3 implementation to 1.5.5.
   (https://github.com/BLAKE3-team/BLAKE3/releases/tag/1.5.5)
 - Synchronize the RHash implementation to the latest master branch which is
   after v1.4.5.
   (https://github.com/rhash/RHash/commit/cf2adf22ae7c39d9b8e5e7b87222046a8f42b3dc)
-- Enable disabling child process creation for NanaZip Self Extracting
+- Enable disabling child process creation for KittenZip Self Extracting
   Executables. (Except installer mode of Self Extracting Executables, which
-  compiled binaries is not provided in the NanaZip MSIX package.)
+  compiled binaries is not provided in the KittenZip MSIX package.)
 
-**NanaZip 3.5 Preview 0 (3.5.1000.0)**
+**KittenZip 3.5 Preview 0 (3.5.1000.0)**
 
-This release includes all the improvements from NanaZip 3.0 Update 1
+This release includes all the improvements from KittenZip 3.0 Update 1
 (3.0.1000.0).
 
-**NanaZip 3.5 Preview 0 (3.5.996.0)**
+**KittenZip 3.5 Preview 0 (3.5.996.0)**
 
-This release includes all the improvements from NanaZip 3.0 (3.0.996.0).
+This release includes all the improvements from KittenZip 3.0 (3.0.996.0).
 
-**NanaZip 3.0 Preview 0 (3.0.756.0)**
+**KittenZip 3.0 Preview 0 (3.0.756.0)**
 
 - Rewrite and split the implementation of the Core Library and the Self
-  Extracting Executable to the separate NanaZip.Core project.
+  Extracting Executable to the separate KittenZip.Core project.
 - Ensure the implementation of Core Library and the Self Extracting Executable
   supports Windows Vista RTM (Build 6000.16386).
 - Reduce the binary size for the Self Extracting Executables.
@@ -358,9 +358,9 @@ This release includes all the improvements from NanaZip 3.0 (3.0.996.0).
 - Fix the text wrapping issue in the About dialog. (Thanks to MenschenToaster.)
 - Use modern IFileDialog for folder picker dialog. (Contributed by 
   reflectronic.)
-- Launch directly to the settings page of association for NanaZip. (Contributed
+- Launch directly to the settings page of association for KittenZip. (Contributed
   by AndromedaMelody.)
-- Show NanaZip in Drives' ContextMenu. (Contributed by AndromedaMelody.)
+- Show KittenZip in Drives' ContextMenu. (Contributed by AndromedaMelody.)
 - Sync file extension support from https://github.com/mcmilk/7-Zip-zstd.
 - Add other methods to compression dialog.
   (https://github.com/mcmilk/7-Zip-zstd/commit/cf29d0c1babcd5ddf2c67eda8bb36e11f9c643b9)
@@ -370,34 +370,34 @@ This release includes all the improvements from NanaZip 3.0 (3.0.996.0).
   (https://github.com/mcmilk/7-Zip-zstd/commit/4fae369d2d6aa60e2bb45eea1fb05659a2599caa)
 - Other adjustments for project development.
 
-**NanaZip 2.1 Preview 0 (2.1.451.0)**
+**KittenZip 2.1 Preview 0 (2.1.451.0)**
 
-- Update icons. (Designed by Shomnipotence. Updated in NanaZip 2.0 Stable.)
-- Add instructions for installing NanaZip for all users. (Updated in NanaZip
+- Update icons. (Designed by Shomnipotence. Updated in KittenZip 2.0 Stable.)
+- Add instructions for installing KittenZip for all users. (Updated in KittenZip
   2.0 Stable.)
-- Add Mile.Xaml to NanaZip project. (Updated in NanaZip 2.0 Stable.)
-- Refresh the about dialog with XAML Islands. (Updated in NanaZip 2.0 Stable.)
-- Start adding prerequisite support for unpackaged mode. (Updated in NanaZip 
+- Add Mile.Xaml to KittenZip project. (Updated in KittenZip 2.0 Stable.)
+- Refresh the about dialog with XAML Islands. (Updated in KittenZip 2.0 Stable.)
+- Start adding prerequisite support for unpackaged mode. (Updated in KittenZip 
   2.0 Stable.)
-- Optimize NanaZip binaries via adjusting the WindowsTargetPlatformMinVersion
-  to 10.0.19041.0 in all packaged NanaZip binaries projects except the Self
-  Extracting Executable stubs projects. (Updated in NanaZip 2.0 Update 1.)
-- Opt out of dynamic code mitigation on main NanaZip thread for resolving the
+- Optimize KittenZip binaries via adjusting the WindowsTargetPlatformMinVersion
+  to 10.0.19041.0 in all packaged KittenZip binaries projects except the Self
+  Extracting Executable stubs projects. (Updated in KittenZip 2.0 Update 1.)
+- Opt out of dynamic code mitigation on main KittenZip thread for resolving the
   compatibility issues with Explorer Patcher. (Contributed by dinhngtu. Updated
-  in NanaZip 2.0 Update 1.)
-- Update Mile.Xaml to 1.1.434. (Updated in NanaZip 2.0 Update 1.)
+  in KittenZip 2.0 Update 1.)
+- Update Mile.Xaml to 1.1.434. (Updated in KittenZip 2.0 Update 1.)
   (https://github.com/ProjectMile/Mile.Xaml/releases/tag/1.1.434.0)
-- Update Mile.Windows.Helpers to 1.0.8. (Updated in NanaZip 2.0 Update 1.)
+- Update Mile.Windows.Helpers to 1.0.8. (Updated in KittenZip 2.0 Update 1.)
   (https://github.com/ProjectMile/Mile.Windows.Helpers/commits/main)
-- Add dark mode support for context menus. (Updated in NanaZip 2.0 Update 1.)
+- Add dark mode support for context menus. (Updated in KittenZip 2.0 Update 1.)
 - Refresh the about dialog with Windows 11 XAML control styles and the 
-  immersive Mica effects. (Updated in NanaZip 2.0 Update 1.)
-- Fix model dialog style behavior for About dialog. (Updated in NanaZip 2.0
+  immersive Mica effects. (Updated in KittenZip 2.0 Update 1.)
+- Fix model dialog style behavior for About dialog. (Updated in KittenZip 2.0
   Update 1.)
 - Continue to refresh application and file type icons. (Designed by 
-  Shomnipotence. Updated in NanaZip 2.0 Update 1.)
+  Shomnipotence. Updated in KittenZip 2.0 Update 1.)
 
-**NanaZip 2.0 Preview 2 (2.0.376.0)**
+**KittenZip 2.0 Preview 2 (2.0.376.0)**
 
 - Update 7-Zip to 22.01. (Thanks to Igor Pavlov. Noticed by HylianSteel, 
   Random-name-hi and DJxSpeedy.)
@@ -413,20 +413,20 @@ This release includes all the improvements from NanaZip 3.0 (3.0.996.0).
   - Enable Signed Returns.
 - Generate resource identities for package manifest manually. (Suggested by 
   AndromedaMelody.)
-- Add workaround for NanaZip not appearing in classic context menu. 
+- Add workaround for KittenZip not appearing in classic context menu. 
   (Contributed by dinhngtu.)
 - Check 7z compression parameter validity upon start of compression.
   (Contributed by dinhngtu.)
 - Update icons. (Designed by Shomnipotence.)
 
-**NanaZip 2.0 Preview 1 (2.0.313.0)**
+**KittenZip 2.0 Preview 1 (2.0.313.0)**
 
 - Fix the shell extension issue which cause Everything crashed. (Thanks to 
   No5972, startkkkkkk, SakuraNeko, bfgxp and riverar.)
-- Allow NanaZip to be associated with any file type. (Contributed by 
+- Allow KittenZip to be associated with any file type. (Contributed by 
   manfromarce.)
 - Update 7-Zip to 22.00. (Thanks to Igor Pavlov. Noticed by HylianSteel.)
-- Integrate the following HASH algorithms to NanaZip from RHash and xxHash.
+- Integrate the following HASH algorithms to KittenZip from RHash and xxHash.
   - AICH
   - BLAKE2b
   - BTIH
@@ -457,23 +457,23 @@ This release includes all the improvements from NanaZip 3.0 (3.0.996.0).
     runtime.
   - Block loading unexpected libraries from remote sources at runtime.
 
-**NanaZip 1.2 Update 1 Preview 1 (1.2.253.0)**
+**KittenZip 1.2 Update 1 Preview 1 (1.2.253.0)**
 
 - Fix the issue of the i18n implementation of File Type Association. 
-  (Contributed by AndromedaMelody. Updated in NanaZip 1.2 Stable.)
+  (Contributed by AndromedaMelody. Updated in KittenZip 1.2 Stable.)
 - Add i18n support for GUI edition of Self Extracting Executable. 
-  (Contributed by AndromedaMelody. Updated in NanaZip 1.2 Stable.)
+  (Contributed by AndromedaMelody. Updated in KittenZip 1.2 Stable.)
 
-**NanaZip 1.2 Preview 4 (1.2.225.0)**
+**KittenZip 1.2 Preview 4 (1.2.225.0)**
 
 - Continue to update ModernWin32MessageBox for solving the infinite loop issue
   in some cases. (Thanks to AndromedaMelody.)
 - Fix crash issue when opening archive files. (Thanks to 1human and Maicol 
   Battistini.)
-- Remove Language page in Options dialog because NanaZip will follow the 
+- Remove Language page in Options dialog because KittenZip will follow the 
   language settings from Windows itself.
 
-**NanaZip 1.1 Servicing Update 1 Preview 3 (1.1.220.0)**
+**KittenZip 1.1 Servicing Update 1 Preview 3 (1.1.220.0)**
 
 - Modernize the i18n implementation via migrating language files from .txt to 
   .resw. (Contributed by AndromedaMelody. Suggested by Maicol Battistini.)
@@ -482,7 +482,7 @@ This release includes all the improvements from NanaZip 3.0 (3.0.996.0).
 - Tweak icons and provide icons for preview versions. (Designed by Alice 
   (四月天). Thanks to StarlightMelody.)
 
-**NanaZip 1.1 Servicing Update 1 Preview 2 (1.1.201.0)**
+**KittenZip 1.1 Servicing Update 1 Preview 2 (1.1.201.0)**
 
 - Fix no ordinal 345 was found in the dynamically attached library issue in 
   Self Extracting Executables. (Thanks to FadeMind.)
@@ -493,17 +493,17 @@ This release includes all the improvements from NanaZip 3.0 (3.0.996.0).
 - Fix cannot start editor issue when only store edition of notepad existed. 
   (Thanks to AndromedaMelody.)
 
-**NanaZip 1.1 Servicing Update 1 Preview 1 (1.1.196.0)**
+**KittenZip 1.1 Servicing Update 1 Preview 1 (1.1.196.0)**
 
 - Simplify the file type association definitions and add the open verb for 
-  them. (Thanks to Fabio286. Fixed in NanaZip 1.1 Stable.)
-- Update VC-LTL to 5.0.4. (Updated in NanaZip 1.1 Stable.)
+  them. (Thanks to Fabio286. Fixed in KittenZip 1.1 Stable.)
+- Update VC-LTL to 5.0.4. (Updated in KittenZip 1.1 Stable.)
 
-**NanaZip 1.1 Preview 2 (1.1.153.0)**
+**KittenZip 1.1 Preview 2 (1.1.153.0)**
 
 - Fix the issue which can't load context menu properly. (Thanks to DJxSpeedy.)
 
-**NanaZip 1.1 Preview 2 (1.1.152.0)**
+**KittenZip 1.1 Preview 2 (1.1.152.0)**
 
 - Reimplement the about dialog with Task Dialog.
 - Update Deutsch translations. (Contributed by Hen Ry.)
@@ -511,24 +511,24 @@ This release includes all the improvements from NanaZip 3.0 (3.0.996.0).
 - Update translations inherited from 7-Zip.
 - Update 7-Zip to 21.07. (Thanks to Igor Pavlov. Noticed by HylianSteel.)
 - Improve the multi volume rar file detection for solving 
-  https://github.com/M2Team/NanaZip/issues/82. (Thanks to 1human.)
+  https://github.com/M2Team/KittenZip/issues/82. (Thanks to 1human.)
 - Modernize the message boxes with Task Dialog.
 
-**NanaZip 1.1 Preview 1 (1.1.101.0)**
+**KittenZip 1.1 Preview 1 (1.1.101.0)**
 
 - Exclude .webp in the archive file type list for solving 
-  https://github.com/M2Team/NanaZip/issues/57. (Thanks to Zbynius. Fixed in 
-  NanaZip 1.0 Stable.)
+  https://github.com/M2Team/KittenZip/issues/57. (Thanks to Zbynius. Fixed in 
+  KittenZip 1.0 Stable.)
 - Update Polish translation. (Contributed by ChuckMichael.)
 - Fix CI issue.
 - Update VC-LTL to 5.0.3.
 - Update C++/WinRT to 2.0.211028.7.
 
-**NanaZip 1.0 Preview 4 (1.0.88.0)**
+**KittenZip 1.0 Preview 4 (1.0.88.0)**
 
 - Update Italian, Russian and Polish Translations. (Contributed by Blueberryy, 
   Maicol Battistini and ChuckMichael.)
-- Provide 7-Zip execution alias for helping users to migrate to NanaZip. 
+- Provide 7-Zip execution alias for helping users to migrate to KittenZip. 
   (Suggested by AndromedaMelody.)
 - Adjust file association icon. (Suggested by 奕然.)
 - Merge features from 7-Zip ZStandard branch. (Suggested by fcharlie. Thanks to
@@ -538,16 +538,16 @@ This release includes all the improvements from NanaZip 3.0 (3.0.996.0).
 - Fix compression level display issue in the compress dialog. (Thanks to 
   SakuraNeko.)
 - Make every file extension have own file type in file type association
-  definitions for solving https://github.com/M2Team/NanaZip/issues/53. (Thanks 
+  definitions for solving https://github.com/M2Team/KittenZip/issues/53. (Thanks 
   to oxygen-dioxide.)
 - Disable virtualization:ExcludedDirectories for resolve 
-  https://github.com/M2Team/NanaZip/issues/34. (Thanks to AndromedaMelody.)
+  https://github.com/M2Team/KittenZip/issues/34. (Thanks to AndromedaMelody.)
 - Reduce the compilation warnings.
-- Change the configuration for NanaZipPackage project for solve the issue when
+- Change the configuration for KittenZipPackage project for solve the issue when
   referencing the Windows Runtime Components.
 - Update Mile.Cpp.
 
-**NanaZip 1.0 Preview 3 (1.0.46.0)**
+**KittenZip 1.0 Preview 3 (1.0.46.0)**
 
 - Enable parsing the NSIS script support in the NSIS archives. (Suggested by 
   alanfox2000. Thanks to myfreeer.)
@@ -559,10 +559,10 @@ This release includes all the improvements from NanaZip 3.0 (3.0.996.0).
   exception handler implementation from VC-LTL 5.x. (Thanks to mingkuang.)
 - Update new icons. (Designed by Alice (四月天), Chi Lei, Kenji Mouri, Rúben
   Garrido and Sakura Neko.)
-- Make main NanaZip package contains all resources.
+- Make main KittenZip package contains all resources.
 - Fix the command line help string. (Thanks to adrianghc.)
 
-**NanaZip 1.0 Preview 2 (1.0.31.0)**
+**KittenZip 1.0 Preview 2 (1.0.31.0)**
 
 - Remove IObjectWithSite in shell extension implementation to reduce the 
   complexity and crashes.
@@ -570,11 +570,11 @@ This release includes all the improvements from NanaZip 3.0 (3.0.996.0).
   in the taskbar instead of contrast white icon. (Thanks to AndromedaMelody.)
 - Remove Windows.Universal TargetDeviceFamily for solving the minimum OS 
   requirements display issue. (Thanks to 青春永不落幕.)
-- Enable NanaZipC and NanaZipG in AppX manifest. (Thanks to be5invis.)
+- Enable KittenZipC and KittenZipG in AppX manifest. (Thanks to be5invis.)
 - Change "The operation can require big amount of RAM (memory)" error dialog to
   warning dialog. (Thanks to Legna.)
 
-**NanaZip 1.0 Preview 1 (1.0.25.0)**
+**KittenZip 1.0 Preview 1 (1.0.25.0)**
 
 - Modernize the build toolchain with MSBuild for using MSIX packaging and 
   parallel compilation support.

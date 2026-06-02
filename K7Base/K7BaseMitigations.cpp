@@ -1,7 +1,7 @@
-﻿/*
- * PROJECT:    NanaZip Platform Base Library (K7Base)
+/*
+ * PROJECT:    KittenZip Platform Base Library (K7Base)
  * FILE:       K7BaseMitigations.cpp
- * PURPOSE:    Implementation for NanaZip Platform Base Mitigations Interfaces
+ * PURPOSE:    Implementation for KittenZip Platform Base Mitigations Interfaces
  *
  * LICENSE:    The MIT License
  *

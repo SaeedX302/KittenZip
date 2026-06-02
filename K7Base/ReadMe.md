@@ -1,17 +1,17 @@
-﻿# NanaZip Platform Base Library (K7Base)
+# KittenZip Platform Base Library (K7Base)
 
 ***Work In Progress***
 
 The static and dynamic library that encapsulates the non-GUI portion of the base
-platform infrastructure for the NanaZip. It's one of the foundational libraries
-of the NanaZip Platform Abstraction Layer.
+platform infrastructure for the KittenZip. It's one of the foundational libraries
+of the KittenZip Platform Abstraction Layer.
 
-K7 is the alias of NanaZip. Here is the relationship between K7 and NanaZip: I
-had mentioned one of the reasons that I call this project NanaZip because Nana
+K7 is the alias of KittenZip. Here is the relationship between K7 and KittenZip: I
+had mentioned one of the reasons that I call this project KittenZip because Nana
 is the romaji of なな which means seven in Japanese. But I had not mentioned the
 way I confirm that: I had recalled one of the Japanese VTubers called Kagura
 Nana when I waiting my elder sister for dinner at Taiyanggong subway station,
-Beijing. For playing more puns, NanaZip uses the K7 (K -> Kagura, 7 -> Nana) as
+Beijing. For playing more puns, KittenZip uses the K7 (K -> Kagura, 7 -> Nana) as
 the alias.
 
 K7Base is designed for Windows only, although the most of the K7Base interfaces

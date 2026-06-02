@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
-  PROJECT:    NanaZip Platform User Library (K7User)
+  PROJECT:    KittenZip Platform User Library (K7User)
   FILE:       K7User.props
   PURPOSE:    MSBuild Properties for referencing the K7User dynamic library
 

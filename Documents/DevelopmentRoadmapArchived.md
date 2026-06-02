@@ -1,4 +1,4 @@
-﻿# Development Roadmap (Archived)
+# Development Roadmap (Archived)
 
 These will be migrated to the new roadmap issue in the future.
 
@@ -10,7 +10,7 @@ These will be migrated to the new roadmap issue in the future.
         AndromedaMelody.)
   - [ ] Continue to modernize the core implementation.
   - [ ] Try to Windows Runtime component for interoperability.
-  - [ ] Provide NanaZip Installer for simplify the deployment.
+  - [ ] Provide KittenZip Installer for simplify the deployment.
   - [ ] Try to add option for save file names with UTF-8 in 7z archives.
   - [ ] Add batch task support. (Suggested by 刘泪.)
   - [ ] Try to design the new UI layout. (Suggested by wangwenx190.)
@@ -39,17 +39,17 @@ These will be migrated to the new roadmap issue in the future.
     - [ ] Provide lightweight SDK for authoring and consuming.
   - [ ] Try to contribute recovery record support for 7z archives to 7-Zip 
         mainline. (Suggested by SakuraNeko.)
-  - [ ] Try to port NanaZip to Linux.
+  - [ ] Try to port KittenZip to Linux.
     - [ ] Try to port MegaUI (an developing lightweight UI framework created by
           mingkuang, under internal developing at the current stage, will be 
           open source if the work has done) framework to Linux.
     - [ ] Try to create MinLin (a.k.a. Minimum Linux, a distro intended for 
           helping publish distroless binaries and provide some Windows API 
           functions as static libraries for having a lightweight platform 
-          abstraction layer) project because I think NanaZip should support
+          abstraction layer) project because I think KittenZip should support
           distroless environment for reducing time wasting for compiling for
           different distros.
-  - [ ] After porting NanaZip to Linux, accept contributions from community 
+  - [ ] After porting KittenZip to Linux, accept contributions from community 
         folks for other POSIX platforms (e.g. FreeBSD) and macOS support.
   - [ ] Try to add extension for Windows File Explorer for give user immersive 
         experience like builtin zip file support in Windows. (Suggested by 

@@ -1,21 +1,21 @@
-﻿# NanaZip License
+# KittenZip License
 
 For giving the maximum respect for the upstream projects and following the 
 philosophy about open-source software from Kenji Mouri (MouriNaruto), the one
 of the M2-Team founders. 
 
-The source code of NanaZip (not including the source code from third-party 
+The source code of KittenZip (not including the source code from third-party 
 libraries, 7-Zip or other 7-Zip derivatives) is distributed under the MIT 
 License.
 
-The application file association icons of NanaZip (these contents are only in 
+The application file association icons of KittenZip (these contents are only in 
 the `Assets` folder) are designed by Shomnipotence and authorized to the 
-NanaZip project, and it is distributed under the CC BY-ND 4.0 License.
+KittenZip project, and it is distributed under the CC BY-ND 4.0 License.
 
 The source code from 7-Zip or other 7-Zip derivatives (these contents are only 
-in the `NanaZip.Core\SevenZip`, `NanaZip.Core\Extensions\ZSCodecs`,
-`NanaZip.Universal\SevenZip`, `NanaZip.UI.Classic\SevenZip` and
-`NanaZip.UI.Modern\SevenZip` folders) is distributed under the 7-Zip License.
+in the `KittenZip.Core\SevenZip`, `KittenZip.Core\Extensions\ZSCodecs`,
+`KittenZip.Universal\SevenZip`, `KittenZip.UI.Classic\SevenZip` and
+`KittenZip.UI.Modern\SevenZip` folders) is distributed under the 7-Zip License.
 
 The source code from the third-party libraries is distributed under the original
 license used in the third-party libraries.
@@ -568,13 +568,13 @@ public licenses.
 Creative Commons may be contacted at creativecommons.org.
 ```
 
-### The 7-Zip branches used in NanaZip
+### The 7-Zip branches used in KittenZip
 
 - https://www.7-zip.org/
 - https://github.com/myfreeer/7z-build-nsis
 - https://github.com/mcmilk/7-Zip-zstd
 
-### The third-party libraries used in NanaZip
+### The third-party libraries used in KittenZip
 
 - BLAKE3, https://github.com/BLAKE3-team/BLAKE3
 - Brotli, https://github.com/google/brotli

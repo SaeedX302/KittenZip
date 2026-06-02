@@ -1,0 +1,141 @@
+using Mile.Project.Helpers;
+using System.Text;
+
+namespace KittenZip.RefreshPackageVersion
+{
+    internal class Program
+    {
+        static string RepositoryRoot = GitRepository.GetRootPath();
+
+        static void ReplaceFileContentViaStringList(
+            string FilePath,
+            List<string> FromList,
+            List<string> ToList)
+        {
+            if (FromList.Count != ToList.Count)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+
+            string Content = File.ReadAllText(FilePath, Encoding.UTF8);
+
+            for (int Index = 0; Index < FromList.Count; ++Index)
+            {
+                Content = Content.Replace(FromList[Index], ToList[Index]);
+            }
+
+            if (Path.GetExtension(FilePath) == ".rc")
+            {
+                File.WriteAllText(FilePath, Content, Encoding.Unicode);
+            }
+            else
+            {
+                FileUtilities.SaveTextToFileAsUtf8Bom(FilePath, Content);
+            }
+        }
+
+        static bool SwitchToPreview = true;
+
+        static List<string> ReleaseStringList = new List<string>
+        {
+            "DisplayName=\"KittenZip\"",
+            "Name=\"40174MouriNaruto.KittenZip\"",
+            "<DisplayName>KittenZip</DisplayName>",
+            "CAE3F1D4-7765-4D98-A060-52CD14D56EAB",
+            "return ::SHStrDupW(L\"KittenZip\", ppszName);",
+            "<Content Include=\"..\\Assets\\PackageAssets\\**\\*\">",
+            "Assets/KittenZip.ico",
+            "Assets/KittenZipSfx.ico",
+        };
+
+        static List<string> PreviewStringList = new List<string>
+        {
+            "DisplayName=\"KittenZip Preview\"",
+            "Name=\"40174MouriNaruto.KittenZipPreview\"",
+            "<DisplayName>KittenZip Preview</DisplayName>",
+            "469D94E9-6AF4-4395-B396-99B1308F8CE5",
+            "return ::SHStrDupW(L\"KittenZip Preview\", ppszName);",
+            "<Content Include=\"..\\Assets\\PreviewPackageAssets\\**\\*\">",
+            "Assets/KittenZipPreview.ico",
+            "Assets/KittenZipPreviewSfx.ico",
+        };
+
+        static List<string> FileList = new List<string>
+        {
+            @"{0}\KittenZip.Core\SevenZip\CPP\7zip\Bundles\SFXCon\resource.rc",
+            @"{0}\KittenZip.Core\SevenZip\CPP\7zip\Bundles\SFXSetup\resource.rc",
+            @"{0}\KittenZip.Core\SevenZip\CPP\7zip\Bundles\SFXWin\resource.rc",
+            @"{0}\KittenZip.Universal\SevenZip\CPP\7zip\UI\GUI\resource.rc",
+            @"{0}\KittenZip.UI.Modern\SevenZip\CPP\7zip\UI\FileManager\resource.rc",
+            @"{0}\KittenZip.UI.Modern\KittenZip.ShellExtension.cpp",
+            @"{0}\KittenZipPackage\Package.appxmanifest",
+            @"{0}\KittenZipPackage\KittenZipPackage.wapproj",
+        };
+
+        static void SwitchDevelopmentChannel()
+        {
+            foreach (var FilePath in FileList)
+            {
+                ReplaceFileContentViaStringList(
+                    string.Format(FilePath, RepositoryRoot),
+                    SwitchToPreview ? ReleaseStringList : PreviewStringList,
+                    SwitchToPreview ? PreviewStringList : ReleaseStringList);
+            }
+        }
+
+        static void GenerateAppxManifestResourceIdentifies()
+        {
+            string FilePath = string.Format(
+                @"{0}\KittenZipPackage\Package.appxmanifest",
+                RepositoryRoot);
+
+            string Content = File.ReadAllText(FilePath);
+
+            string PreviousContent = string.Empty;
+            {
+                string StartString = "  <Resources>\r\n";
+                string EndString = "  </Resources>";
+
+                int Start = Content.IndexOf(StartString) + StartString.Length;
+                int End = Content.IndexOf(EndString);
+
+                PreviousContent = Content.Substring(Start, End - Start);
+            }
+
+            if (string.IsNullOrEmpty(PreviousContent))
+            {
+                return;
+            }
+
+            string NewContent = string.Empty;
+            {
+                NewContent += "    <Resource Language=\"x-generate\"/>\r\n";
+
+                int[] Scales = [100, 125, 150, 200, 400];
+                foreach (var Scale in Scales)
+                {
+                    NewContent += string.Format(
+                        "    <Resource uap:Scale=\"{0}\" />\r\n",
+                        Scale.ToString());
+                }
+            }
+
+            FileUtilities.SaveTextToFileAsUtf8Bom(
+                FilePath,
+                File.ReadAllText(FilePath).Replace(
+                    PreviousContent,
+                    NewContent));
+        }
+
+        static void Main(string[] args)
+        {
+            SwitchDevelopmentChannel();
+
+            GenerateAppxManifestResourceIdentifies();
+
+            Console.WriteLine(
+               "KittenZip.RefreshPackageVersion task has been completed.");
+            Console.ReadKey();
+        }
+    }
+}
